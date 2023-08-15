@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.heading{
+		font-size: 30px;
+		font-weight: 700;
+		font-family: sans-serif;
+		margin: 15px 0px;
+	}
+	.btn1{
+		padding: 13px 80px;
+		border-radius: 25px;
+		font-size: 17px;
+		font-weight: bold;
+		color: white;
+		background-color: #6189c9;
+		margin: 15px 0px;
+		cursor: pointer;
+	}
+	.btn2{
+		padding: 13px 86px;
+		border-radius: 25px;
+		font-size: 17px;
+		font-weight: bold;
+		background-color: #f2f4f7;
+		margin: 10px 0px;
+		cursor: pointer;
+	}
+	.or {
+    display: table;
+    font-size: 16px;
+    margin: 0px auto 1em;
+    color: rgb(127, 127, 127);
+    width: 85%;
+	}
+	form{
+			padding: 0px 30px 0px 10px;
+            margin:  auto;
+            max-width: 450px;
+        }
+	#user,#pass,#name{
+            display: block;
+            margin-top: 28px;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+        #username,#password,#pname{
+            height: 50px;
+            width: 100%;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-top: 7px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        #dob{
+
+        	margin: 7px;
+        	height: 40px;
+            width: 25%;
+            padding: 0 5px;
+        }
+        #gen{
+        	margin: 8px;
+        }
+        #submit{
+            margin: 20px auto 0;
+            display: block;
+            width: 40%;
+            background-color: #1d5f99;
+            color: #080710;
+            padding: 15px ;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            border-style: none;
+        }
+        
+
+        
+</style>
+<body>
+<div style="text-align: center;">
+	<div>
+		<a href="index.html">
+		<img src="images/logo.png" alt="logo" width="150" style="margin: 30px 20px;">
+		</a>
+		<div class="heading">Sign up for free to start listening.</div>
+		<button class="btn1">sign up with facebook</button><br>
+		<button class="btn2">sign up with Google</button>
+		<span class="or">or</span>
+	</div>
+</div>
+		<form >
+			<label for="username" id="user"><strong>What's your email?</strong></label>
+    		<input type="text" placeholder="Enter your email" id="username">
+    		<a href=""> Use phone number instead.</a>
+    		<label for="password" id="pass"><strong>Create a password</strong></label>
+    		<input type="password" placeholder="Enter your password" id="password">
+    		<label for="name" id="name"><strong>What's your email?</strong></label>
+    		<input type="text" placeholder="Enter a profile name" id="pname">
+    		<span> This appears on your profile.</span>
+    		<label for="name" id="name"><strong>What's your date of birth?</strong></label>
+    		<input type="text" placeholder="YYYY" id="dob">
+    		<select id="dob" style="padding: 10px;">
+    			<option>Month</option>
+    		</select>
+    		<input type="text" placeholder="DD" id="dob">
+    		<label for="name" id="name"><strong>What's your gender?</strong></label>
+    		<input type="radio" name="gender" id="gen">
+    		<label for="name" id="gen">Male</label>
+    		<input type="radio" name="gender" id="gen">
+    		<label for="name" id="gen">Female</label>
+    		<input type="radio" name="gender" id="gen">
+    		<label for="name" id="gen">Non-binary</label>
+    		<input type="radio" name="gender" id="gen">
+    		<label for="name" id="gen">Other</label>
+    		<input type="radio" name="gender" id="gen">
+    		<label for="name" id="gen">Prefer not to say</label><br>
+    		<input type="checkbox" name="" style="margin-top: 25px;">
+    		<label style="margin-left: 10px;">I would prefer not to receive marketing messages from Spotify</label><br>
+    		<input type="checkbox" name="" style="margin-top: 25px;">
+    		<label style="margin-left: 10px;">Share my registration data with Spotify's content providers for marketing purposes.</label>
+
+    		<p style="text-align:center;margin: 35px;font-size: 11px;font-family: sans-serif;">By clicking on sign-up, you agree to Spotify's <a href="">Terms and Conditions of Use.</a> </p>
+
+    		<p style="text-align:center;margin: 15px;font-size: 11px;font-family: sans-serif;">To learn more about how Spotify collects, uses, shares and protects your personal data, please see<a href=""> Spotify's Privacy Policy.</a> </p>
+
+
+    		<button type="submit" id="submit">Sign Up</button>
+
+    		<div style="text-align: center;margin: 20px 0px 100px;">Have an account? <a href="login.html"> Log in.</a></div>
+		</form>
+	
+</body>
+</html>

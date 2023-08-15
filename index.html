@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>musify-music</title>
+  <link rel="icon" type="image" href="images/music.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+</head>
+<body>
+
+
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo-bianco.png" alt="Logo" />
+        </a>
+        <div class="mobile-menu-button">
+          <span class="fa fa-bars" id="fa-bars"></span>
+        </div>
+        <div class="close-button" id="close-button">
+          <span class="fa fa-times"></span>
+        </div>
+      </div>
+
+      <div class="navigation" id="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+              <span id="search">Search</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="navigation-one">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span>Your Library</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span>Create Playlist</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span>Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar fixed-topbar"> 
+        <div class="prev-next-buttons">
+          <button type="" class="fa fas fa-chevron-left" id="leftNextBtn"></button>
+          <button type="" class="fa fas fa-chevron-right" id="rightNextBtn"></button>
+          <span id="search-bar" style="display:none;">
+          <input type="search" name="" class="form-control" placeholder="Search..." id="SearchBox">
+          </span>
+        </div>
+
+        <div class="navbar" id="nav">
+          <ul>
+            <li>
+              <a href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+          <a href="login.html" style="text-decoration: none;color: black;">
+          <button type="button">Log In</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Browse section start-->
+      <div class="play-container" id="play-list">
+      <div class="play-list">
+        <h2>Browse all</h2>
+
+        <div class="list">
+          <div class="item" style="background-color: #62914d;">
+            <h2>Podcasts</h2>
+          </div>
+
+          <div class="item" style="background-color: #606396;">
+            <h2>Made For You</h2>
+          </div>
+
+          <div class="item" style="background-color: #a7a9db;">
+            <h2>Charts</h2>
+          </div>
+
+          <div class="item" style="background-color: #cf329a;">
+            <h2>New Releases</h2>
+          </div>
+
+          <div class="item" style="background-color: #7a458f;">
+            <h2>Discover</h2>
+          </div>
+
+          <div class="item" style="background-color: #699be0;">
+            <h2>Live Events</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="play-list">
+        <div class="list">
+          <div class="item" style="background-color: #d8a5f2;">
+            <h2>Bollywood</h2>
+          </div>
+
+          <div class="item" style="background-color: #eb3d7d;">
+            <h2>Panjabi</h2>
+          </div>
+
+          <div class="item" style="background-color: #73cbd1;">
+            <h2>Tamil</h2>
+          </div>
+
+          <div class="item" style="background-color: #bed173;">
+            <h2>Telugu</h2>
+          </div>
+
+          <div class="item" style="background-color: #8bb594;">
+            <h2>Pop</h2>
+          </div>
+
+          <div class="item" style="background-color: #90c8d6;">
+            <h2>Summer</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Browse section end -->
+
+      <!-- musify playlist section start -->
+      <div class="musify-container" id="musify-playlists">
+      <div class="musify-playlists">
+        <h2>Musify Playlists</h2>
+
+        <div class="list">
+          <div class="item">
+            <img src="images/img1.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Today's Top Hits</h4>
+            <p>Rema & Selena Gomez are on top of the...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img2.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>RapCaviar</h4>
+            <p>New Music from Lil Baby, Juice WRLD an...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img3.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>All out 2010s</h4>
+            <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img4.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Rock Classics</h4>
+            <p>Rock Legends & epic songs that continue t...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img5.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Hits</h4>
+            <p>Kick back to the best new and recent chill...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img1.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Today's Top Hits</h4>
+            <p>Rema & Selena Gomez are on top of the...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img2.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>RapCaviar</h4>
+            <p>New Music from Lil Baby, Juice WRLD an...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="musify-playlists">
+        <h2>Focus</h2>
+        <div class="list">
+          <div class="item">
+            <img src="images/img6.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Peaceful Piano</h4>
+            <p>Relax and indulge with beautiful piano pieces</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img9.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Deep Focus</h4>
+            <p>Keep calm and focus with ambient and pos...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img8.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Instrumental Study</h4>
+            <p>Focus with soft study music in the...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img7.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>chill lofi study beats</h4>
+            <p>The perfect study beats, twenty four...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img10.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Coding Mode</h4>
+            <p>Dedicated to all the programmers out there.</p>
+          </div>
+          
+          <div class="item">
+            <img src="images/img6.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Peaceful Piano</h4>
+            <p>Relax and indulge with beautiful piano pieces</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img9.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Deep Focus</h4>
+            <p>Keep calm and focus with ambient and pos...</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="musify-playlists" >
+        <h2>Sound of India</h2>
+        <div class="list">
+          <div class="item">
+            <img src="images/img11.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Mood Booster</h4>
+            <p>Get happy with today's dose of feel-good...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img12.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feelin' Good</h4>
+            <p>Feel good with this positively timeless...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img13.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Dark & Stormy</h4>
+            <p>Beautifully dark, dramatic tracks.</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img14.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feel Good Piano</h4>
+            <p>Happy vibes for an upbeat morning.</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img15.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feelin' Myself</h4>
+            <p>The hip-hop playlist that's a whole mood...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img11.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Mood Booster</h4>
+            <p>Get happy with today's dose of feel-good...</p>
+          </div>
+
+          <div class="item">
+            <img src="images/img12.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Feelin' Good</h4>
+            <p>Feel good with this positively timeless...</p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+      <!-- musify playlist section end -->
+
+      <!-- footer start -->
+      <footer>
+        <div class="footer-content">
+          <ul class="footer-list">
+            <li><strong style="color: white;">Company</strong></li>
+            <li>About</li>
+            <li>Jobs</li>
+          </ul>
+          <ul class="footer-list">
+            <li><strong style="color: white;">Communities</strong></li>
+            <li>For Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+          </ul>
+          <ul class="footer-list">
+            <li><strong style="color: white;">Useful links</strong></li>
+            <li>Support</li>
+            <li>Free Mobile App</li>
+          </ul>
+          <ul style="display: inline-flex;">
+            <li><i class="fa-brands fa-square-facebook fa-xl"></i></li>
+            <li><i class="fa-brands fa-google-plus fa-xl"></i></li>
+            <li><i class="fa-brands fa-square-twitter fa-xl"></i></li>
+            <li><i class="fa-brands fa-square-instagram fa-xl"></i></li>
+          </ul>
+        </div>
+        <hr>  
+        <div style="margin: 50px 50px 0px;color: #dcdee0;">© 2023 musify</div>
+      </footer>
+
+      <!-- footer end -->
+
+      <div class="preview">
+        <div class="text">
+          <h6>Preview of Musify</h6>
+          <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <div class="button">
+          <a href="signup.html">
+          <button type="button">Sign up free</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
